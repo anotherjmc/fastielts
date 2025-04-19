@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-X7LLY5NXM8"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-X7LLY5NXM8');
+</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="IELTS雅思考試備考資源即將上線，為台灣考生打造專業的練習題庫和備考指南，幫助您提升英語能力達到理想分數。">
+    <meta name="keywords" content="IELTS, 雅思, 台灣雅思, 雅思考試, 雅思準備, 雅思題庫, 雅思模擬考, 雅思考古題, 雅思備考, 雅思課程">
+    <title>敬請期待 | IELTS雅思備考專家 | 台灣專業雅思資源</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .coming-soon {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 2rem;
+            background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+        }
+
+        .coming-soon h1 {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+            color: var(--primary-color);
+        }
+
+        .coming-soon p {
+            font-size: 1.25rem;
+            margin-bottom: 2rem;
+            color: #4b5563;
+            max-width: 600px;
+        }
+
+        .redirect-message {
+            font-size: 1rem;
+            color: #6b7280;
+            margin-top: 2rem;
+        }
+
+        .countdown {
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            margin-top: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="coming-soon">
+        <h1>敬請期待</h1>
+        <p>我們正在努力建置更多優質的雅思備考資源，請稍後再回來查看。</p>
+        <a href="https://www.peakskillshub.com" class="primary-btn">前往官方網站</a>
+        <p class="redirect-message">即將為您導向至官方網站</p>
+        <div class="countdown">5</div>
+    </div>
+
+    <script>
+        // Countdown and redirect
+        let count = 5;
+        const countdownElement = document.querySelector('.countdown');
+        
+        const countdown = setInterval(() => {
+            count--;
+            countdownElement.textContent = count;
+            
+            if (count <= 0) {
+                clearInterval(countdown);
+                window.location.href = 'https://www.peakskillshub.com';
+            }
+        }, 1000);
+    </script>
+</body>
+</html> 
